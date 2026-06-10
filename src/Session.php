@@ -150,10 +150,7 @@ class Session
 	{
 		$this->assertActive();
 
-		/** @var array<array-key, mixed> $session */
-		$session = $_SESSION;
-
-		return $session;
+		return array_replace([], $_SESSION);
 	}
 
 	public function clear(): void
