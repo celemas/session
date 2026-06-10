@@ -1,11 +1,11 @@
 # Celemas Sessions
 
 <!-- prettier-ignore-start -->
-[![ci](https://github.com/celemas/session/actions/workflows/ci.yml/badge.svg)](https://github.com/celemas/session/actions)
-[![codecov](https://codecov.io/github/celemas/session/graph/badge.svg?token=PFMO1BE0FD)](https://codecov.io/github/celemas/session)
-[![psalm coverage](https://shepherd.dev/github/celemas/session/coverage.svg?)](https://shepherd.dev/github/celemas/session)
-[![psalm level](https://shepherd.dev/github/celemas/session/level.svg?)](https://shepherd.dev/github/celemas/session)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
+[![ci](https://codeberg.org/celemas/session/badges/workflows/ci.yml/badge.svg?style=flat&logo=codeberg&logoColor=white&label=ci)](https://codeberg.org/celemas/session/actions)
+[![code coverage](https://img.shields.io/endpoint?url=https%3A%2F%2Fcov.celemas.dev%2Fcelemas%2Fsession%2Fcode%2Fbadge.json)](https://cov.celemas.dev/celemas/session/code)
+[![type coverage](https://img.shields.io/endpoint?url=https%3A%2F%2Fcov.celemas.dev%2Fcelemas%2Fsession%2Ftypes%2Fbadge-cover.json)](https://cov.celemas.dev/celemas/session/types)
+[![psalm level](https://img.shields.io/endpoint?url=https%3A%2F%2Fcov.celemas.dev%2Fcelemas%2Fsession%2Ftypes%2Fbadge-level.json)](https://cov.celemas.dev/celemas/session/types)
+[![Software License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 <!-- prettier-ignore-end -->
 
 Helper classes for native PHP sessions, flash messages, and CSRF.
