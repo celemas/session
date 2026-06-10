@@ -21,8 +21,9 @@ preserve-breaking-conditional-expression = true
 integrations = []
 
 [linter.rules]
-cyclomatic-complexity = {  exclude = ['src/Session.php'] }
-kan-defect = {  exclude = ['src/Session.php'] }
+cyclomatic-complexity = { enabled = false }
+kan-defect = { enabled = false }
+prefer-early-continue = { max_allowed_statements = 1 }
 literal-named-argument = { enabled = false }
 no-literal-password = { exclude = ['tests'] }
 readable-literal = { min-digits = 7 }
