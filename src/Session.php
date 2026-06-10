@@ -150,7 +150,13 @@ class Session
 	{
 		$this->assertActive();
 
-		return array_replace([], $_SESSION);
+		/**
+		 * @var array<array-key, mixed> $session
+		 * @mago-expect lint:inline-variable-return Keep the explicit type for `$_SESSION`.
+		 */
+		$session = $_SESSION;
+
+		return $session;
 	}
 
 	public function clear(): void
