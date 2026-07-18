@@ -1,17 +1,17 @@
-# Celemas Sessions
+# Celema Sessions
 
-Celemas Sessions wraps native PHP sessions and provides a small CSRF helper.
+Celema Sessions wraps native PHP sessions and provides a small CSRF helper.
 
 ## Installation
 
 ```bash
-composer require celemas/session
+composer require celema/session
 ```
 
 ## Start a session
 
 ```php
-use Celemas\Session\Session;
+use Celema\Session\Session;
 
 $session = new Session();
 $session->start();
@@ -52,14 +52,14 @@ Call `$session->close()` after your last session read or write to write the curr
 
 ## Custom helpers
 
-`$session->flash`, `$session->csrf`, and `$session->uri` are created lazily through `Celemas\Session\Contract\Helpers`. Pass a custom implementation when you need custom helper classes or storage keys:
+`$session->flash`, `$session->csrf`, and `$session->uri` are created lazily through `Celema\Session\Contract\Helpers`. Pass a custom implementation when you need custom helper classes or storage keys:
 
 ```php
-use Celemas\Session\Contract\Helpers as HelpersContract;
-use Celemas\Session\Csrf;
-use Celemas\Session\Flash;
-use Celemas\Session\Session;
-use Celemas\Session\Uri;
+use Celema\Session\Contract\Helpers as HelpersContract;
+use Celema\Session\Csrf;
+use Celema\Session\Flash;
+use Celema\Session\Session;
+use Celema\Session\Uri;
 
 final class AppHelpers implements HelpersContract
 {
@@ -176,7 +176,7 @@ $session->csrf->remove('contact');
 ```php
 $csrf = new Csrf(
     $session,
-    key: 'celemas_csrf_tokens',
+    key: 'celema_csrf_tokens',
     field: '_token',
     header: 'X-CSRF-Token',
 );
