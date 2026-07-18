@@ -1,10 +1,17 @@
 # Changelog
 
-## [Unreleased](https://codeberg.org/celemas/session/compare/0.2.0...HEAD)
+## [Unreleased](https://codeberg.org/celema/session/compare/0.2.0...HEAD)
 
-No notable changes since the last release.
+### Changed
 
-## [0.2.0](https://codeberg.org/celemas/session/src/tag/0.2.0) (2026-05-10)
+- Renamed the Composer package to `celema/session` and moved PHP classes from `Celemas\Session` to `Celema\Session`.
+- Renamed the default session helper storage keys to `celema_csrf_tokens`, `celema_flash_messages`, and `celema_remembered_uri`.
+
+### Removed
+
+- Removed the previous Composer package name and PHP namespace; consumers must update their dependency and imports.
+
+## [0.2.0](https://codeberg.org/celema/session/src/tag/0.2.0) (2026-05-10)
 
 ### Breaking
 
@@ -43,7 +50,7 @@ No notable changes since the last release.
 - Fixed CSRF verification creating missing tokens as a side effect.
 - Preserved SameSite and partitioned metadata when deleting session cookies.
 
-## [0.1.0](https://codeberg.org/celemas/session/src/tag/0.1.0) (2026-01-31)
+## [0.1.0](https://codeberg.org/celema/session/src/tag/0.1.0) (2026-01-31)
 
 Initial release.
 
