@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Celemas\Session\Tests;
+namespace Celema\Session\Tests;
 
-use Celemas\Session\Contract\Helpers as HelpersContract;
-use Celemas\Session\Csrf;
-use Celemas\Session\Flash;
-use Celemas\Session\OutOfBoundsException;
-use Celemas\Session\RuntimeException;
-use Celemas\Session\Session;
-use Celemas\Session\Uri;
+use Celema\Session\Contract\Helpers as HelpersContract;
+use Celema\Session\Csrf;
+use Celema\Session\Flash;
+use Celema\Session\OutOfBoundsException;
+use Celema\Session\RuntimeException;
+use Celema\Session\Session;
+use Celema\Session\Uri;
 
 final class SessionTest extends TestCase
 {

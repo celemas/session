@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Celemas\Session {
+namespace Celema\Session {
 	function setcookie(...$args): bool
 	{
-		return \Celemas\Session\Tests\SessionCookieTest::setCookieResult($args);
+		return \Celema\Session\Tests\SessionCookieTest::setCookieResult($args);
 	}
 }
 
-namespace Celemas\Session\Tests {
-	use Celemas\Session\Session;
+namespace Celema\Session\Tests {
+	use Celema\Session\Session;
 
 	final class SessionCookieTest extends TestCase
 	{

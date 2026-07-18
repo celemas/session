@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Celemas\Session\Contract;
+namespace Celema\Session\Contract;
 
-use Celemas\Session\Csrf;
-use Celemas\Session\Flash;
-use Celemas\Session\Session;
-use Celemas\Session\Uri;
+use Celema\Session\Csrf;
+use Celema\Session\Flash;
+use Celema\Session\Session;
+use Celema\Session\Uri;
 
 /** @api */
 interface Helpers

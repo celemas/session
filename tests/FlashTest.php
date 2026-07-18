@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Celemas\Session\Tests;
+namespace Celema\Session\Tests;
 
-use Celemas\Session\Flash;
-use Celemas\Session\RuntimeException;
-use Celemas\Session\Session;
+use Celema\Session\Flash;
+use Celema\Session\RuntimeException;
+use Celema\Session\Session;
 
 final class FlashTest extends TestCase
 {

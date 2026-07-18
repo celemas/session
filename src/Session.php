@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Celemas\Session;
+namespace Celema\Session;
 
 use SessionHandlerInterface;
 

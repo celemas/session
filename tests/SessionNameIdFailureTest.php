@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Celemas\Session {
+namespace Celema\Session {
 	function session_name(?string $name = null): string|false
 	{
 		if ($name !== null) {
 			return \session_name($name);
 		}
 
-		return \Celemas\Session\Tests\SessionNameIdFailureTest::sessionNameResult();
+		return \Celema\Session\Tests\SessionNameIdFailureTest::sessionNameResult();
 	}
 
 	function session_id(?string $id = null): string|false
@@ -18,30 +18,30 @@ namespace Celemas\Session {
 			return \session_id($id);
 		}
 
-		return \Celemas\Session\Tests\SessionNameIdFailureTest::sessionIdResult();
+		return \Celema\Session\Tests\SessionNameIdFailureTest::sessionIdResult();
 	}
 
 	function session_regenerate_id($deleteOldSession = false): bool
 	{
-		return \Celemas\Session\Tests\SessionNameIdFailureTest::sessionRegenerateIdResult(
+		return \Celema\Session\Tests\SessionNameIdFailureTest::sessionRegenerateIdResult(
 			$deleteOldSession,
 		);
 	}
 
 	function session_write_close(): bool
 	{
-		return \Celemas\Session\Tests\SessionNameIdFailureTest::sessionWriteCloseResult();
+		return \Celema\Session\Tests\SessionNameIdFailureTest::sessionWriteCloseResult();
 	}
 
 	function session_destroy(): bool
 	{
-		return \Celemas\Session\Tests\SessionNameIdFailureTest::sessionDestroyResult();
+		return \Celema\Session\Tests\SessionNameIdFailureTest::sessionDestroyResult();
 	}
 }
 
-namespace Celemas\Session\Tests {
-	use Celemas\Session\RuntimeException;
-	use Celemas\Session\Session;
+namespace Celema\Session\Tests {
+	use Celema\Session\RuntimeException;
+	use Celema\Session\Session;
 
 	final class SessionNameIdFailureTest extends TestCase
 	{

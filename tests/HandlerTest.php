@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Celemas\Session {
+namespace Celema\Session {
 	function session_set_save_handler($handler, $registerShutdown = true): bool
 	{
-		return \Celemas\Session\Tests\HandlerTest::sessionSetSaveHandlerResult(
+		return \Celema\Session\Tests\HandlerTest::sessionSetSaveHandlerResult(
 			$handler,
 			$registerShutdown,
 		);
 	}
 }
 
-namespace Celemas\Session\Tests {
-	use Celemas\Session\RuntimeException;
-	use Celemas\Session\Session;
+namespace Celema\Session\Tests {
+	use Celema\Session\RuntimeException;
+	use Celema\Session\Session;
 
 	final class HandlerTest extends TestCase
 	{

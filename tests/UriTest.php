@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Celemas\Session\Tests;
+namespace Celema\Session\Tests;
 
-use Celemas\Session\RuntimeException;
-use Celemas\Session\Session;
-use Celemas\Session\Uri;
+use Celema\Session\RuntimeException;
+use Celema\Session\Session;
+use Celema\Session\Uri;
 
 final class UriTest extends TestCase
 {

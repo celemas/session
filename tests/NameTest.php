@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Celemas\Session\Tests;
+namespace Celema\Session\Tests;
 
-use Celemas\Session\Session;
+use Celema\Session\Session;
 
 final class NameTest extends TestCase
 {

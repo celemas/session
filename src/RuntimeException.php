@@ -2,6 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Celemas\Session;
+namespace Celema\Session;
 
 final class RuntimeException extends \RuntimeException implements SessionException {}
