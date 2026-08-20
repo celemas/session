@@ -80,9 +80,9 @@ class Uri
 
 		return (
 			is_array($parts)
-			&& !array_key_exists('scheme', $parts)
-			&& !array_key_exists('host', $parts)
-			&& array_key_exists('path', $parts)
+				&& !array_key_exists('scheme', $parts)
+				&& !array_key_exists('host', $parts)
+				&& array_key_exists('path', $parts)
 		);
 	}
 }
