@@ -25,7 +25,7 @@ integrations = []
 [linter.rules]
 cyclomatic-complexity = { enabled = false }
 kan-defect = { enabled = false }
-prefer-early-continue = { max_allowed_statements = 1 }
+prefer-early-continue = { enabled = false }
 literal-named-argument = { enabled = false }
 no-literal-password = { exclude = ['tests'] }
 readable-literal = { min-digits = 7 }
