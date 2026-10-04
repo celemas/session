@@ -9,6 +9,9 @@
 		html: '.infection/infection.html',
 		summary: '.infection/summary.log',
 	},
+	// Ratchet: raise these with the reached score, never lower them.
+	minMsi: 100,
+	minCoveredMsi: 100,
 	// CI mutates only the lines changed by a push; pushes without source
 	// changes produce no mutants and must not fail the threshold.
 	ignoreMsiWithNoMutations: true,
